@@ -82,7 +82,7 @@ app.get('/weather', (req, res)=> {
 // })
 
 
-// // /weather 
+// weather 
 // app.get('/weather', (req, res)=> {
 //     res.send(
 //         [{
