@@ -99,6 +99,7 @@ input {
     padding: 8px;
     text-align: center;
     margin-right: 1rem;
+    border: #888888;
 }
 
 button {
