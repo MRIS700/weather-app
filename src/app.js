@@ -2,11 +2,12 @@ const path = require('path')
 const express = require('express')
 const app = express()
 const hbs = require('hbs')
-const port = 3000
+const port = process.env.PORT || 3000
 const name = 'Md. Rakibul Islam'
 const geocode = require('./utils/geocode')
 const forcast = require('./utils/forcast')
 const request = require('request')
+
 
 // changing directory
 const publicDirectoryPath = path.join(__dirname,'../public')
