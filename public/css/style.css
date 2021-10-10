@@ -54,7 +54,7 @@ h1 {
 /* Footer Section */
 
 footer {
-    color: #81888b;
+    color: #575757;
     border-top: 1px solid #9EA7AC;
     padding: 16px;
     margin-top: 16px;
@@ -67,19 +67,20 @@ input {
 
 button {
     cursor: pointer;
-    border: 1px solid #888888;
-    color: #575757;
+    border: 2px solid #575757;
+    background: #575757;
+    color: #ffffff;
     padding: 8px;
+    width: 15%;
+    border-radius: 0.5rem;
+    font-size: 1rem;
 }
 
 .msg1 {
     width: 95%;
     height: 100px;
-    background: #b2bec3;
     padding: 0.5rem;
-    text-align: center;
     margin-bottom: 1rem;
-    border-radius: 0.5rem;
 }
 
 strong {
@@ -99,14 +100,5 @@ input {
     padding: 8px;
     text-align: center;
     margin-right: 1rem;
-    border: #888888;
-}
-
-button {
-    width: 15%;
-    padding: 8px;
-    border-radius: 0.5rem;
-    background: #ff7675;
-    color: #000000;
-    font-size: 1rem;
+    border: 2px  solid #888888;
 }

@@ -1,7 +1,7 @@
 const request = require('request')
 
 const forcast = (latitude, longitude, callback) => {
-    const url = 'http://api.weatherstack.com/current?access_key=06451cc05ea1c8bfdcc9fa7ea3adf748&query='+ latitude +',-'+ longitude +'&units=m'
+    const url = 'http://api.weatherstack.com/current?access_key=2b8c98e719bb8e512ff563d75f6389e1&query='+ latitude +',-'+ longitude +'&units=m'
 
     request({url, json: true}, (error, {body}) => {
 
@@ -13,7 +13,9 @@ const forcast = (latitude, longitude, callback) => {
             const temp = body.current.temperature
             const weather = body.current.weather_descriptions
             const precip = body.current.precip
-            callback(undefined, `The weather is ${weather}, Temperature: ${temp} degree Celcius and The chance of Rain is ${precip}%`)
+            const humidity = body.current.humidity
+            const feelsLike = body.current.feelslike
+            callback(undefined, `Weather Status: ${weather}, Actual Temperature is ${temp}°C, Feels Like : ${feelsLike}°C, Humidity: ${humidity} and The chance of Rain is ${precip}%`)
             
         }
     })
